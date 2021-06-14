@@ -66,16 +66,25 @@ html {
   line-height: 3rem;
   font-weight: 300; }
 
-.download__desc {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin: 2rem 0; }
-
 .download__btn {
   margin: 2rem 0; }
 
 .download__img {
   margin: 2rem 0; }
+
+.s-reviews {
+  background-image: linear-gradient(90deg, rgba(50, 155, 250, 0.9) 35%, rgba(50, 155, 250, 0.9) 100%), url(../images/banner/testmonial.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 5rem; }
+  .s-reviews__stars {
+    color: #f4cf67; }
+  .s-reviews__author {
+    text-transform: uppercase;
+    font-size: 1.5rem; }
 
 .btn, .btn:link, .btn:visited {
   width: 150px;
@@ -104,5 +113,10 @@ html {
 
 .heading-2 {
   font-size: 2rem;
+  font-weight: 300;
+  margin: 2rem 0; }
+
+.paragraph {
+  font-size: 1.5rem;
   font-weight: 300;
   margin: 2rem 0; }

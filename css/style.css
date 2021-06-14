@@ -14,15 +14,18 @@ html {
     font-size: 2.5rem;
     color: #fff; }
 
+.section {
+  padding: 3rem; }
+
 .header {
   background-image: url(../images/banner/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
   .header__left {
-    padding: 3rem;
     color: #fff;
-    text-align: left; }
+    text-align: left;
+    margin: 2rem 0; }
   .header__heading {
     font-size: 2.5rem;
     font-weight: 300;
@@ -35,6 +38,45 @@ html {
     display: flex;
     justify-content: center; }
 
+.s-features__features {
+  text-align: center;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.features__img {
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem; }
+  .features__img--blue {
+    background-color: #329bfa;
+    background-image: linear-gradient(90deg, #329bfa 35%, #90c9ff 100%); }
+  .features__img--orange {
+    background-color: #fcad5c;
+    background-image: linear-gradient(90deg, #fcad5c 35%, #fc9262 100%); }
+  .features__img--green {
+    background-color: #36ef8c;
+    background-image: linear-gradient(90deg, #36ef8c 35%, #8afec0 100%); }
+
+.features__desc {
+  font-size: 2.1rem;
+  margin: 2rem 0;
+  padding: 0 6rem;
+  line-height: 3rem;
+  font-weight: 300; }
+
+.download__desc {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 2rem 0; }
+
+.download__btn {
+  margin: 2rem 0; }
+
+.download__img {
+  margin: 2rem 0; }
+
 .btn, .btn:link, .btn:visited {
   width: 150px;
   height: 40px;
@@ -42,10 +84,25 @@ html {
   letter-spacing: 0.1rem;
   background-color: transparent;
   color: #fff;
-  border: 1px solid #36ebed;
   border-radius: 3px;
-  box-shadow: 0 0 40px 40px #36ebed inset, 0 0 0 0 #36ebed;
   transition: all 150ms ease-in-out; }
 
-.btn:hover {
+.btn--cta, .btn--cta:link, .btn--cta:visited {
+  border: 1px solid #36ebed;
+  box-shadow: 0 0 40px 40px #36ebed inset, 0 0 0 0 #36ebed; }
+
+.btn--cta:hover {
   box-shadow: 0 0 10px 0 #36ebed inset, 0 0 10px 4px #36ebed; }
+
+.btn--download, .btn--download:link, .btn--download:visited {
+  border: 1px solid #329bfa;
+  box-shadow: 0 0 40px 40px #329bfa inset, 0 0 0 0 #329bfa; }
+
+.btn--download:hover {
+  color: #329bfa;
+  box-shadow: 0 0 10px 0 #329bfa inset, 0 0 10px 4px #329bfa; }
+
+.heading-2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 2rem 0; }

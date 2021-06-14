@@ -1,0 +1,51 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif; }
+
+.nav {
+  background-color: #2c2c2c;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__logo {
+    align-self: flex-start; }
+  .nav__hamburger {
+    font-size: 2.5rem;
+    color: #fff; }
+
+.header {
+  background-image: url(../images/banner/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .header__left {
+    padding: 3rem;
+    color: #fff;
+    text-align: left; }
+  .header__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 2rem 0; }
+  .header__desc {
+    font-size: 1.1rem; }
+  .header__cta {
+    margin: 3rem 0; }
+  .header__right {
+    display: flex;
+    justify-content: center; }
+
+.btn, .btn:link, .btn:visited {
+  width: 150px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #36ebed;
+  border-radius: 3px;
+  box-shadow: 0 0 40px 40px #36ebed inset, 0 0 0 0 #36ebed;
+  transition: all 150ms ease-in-out; }
+
+.btn:hover {
+  box-shadow: 0 0 10px 0 #36ebed inset, 0 0 10px 4px #36ebed; }

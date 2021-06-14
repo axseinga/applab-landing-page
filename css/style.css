@@ -1,3 +1,11 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0.95); }
+  70% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.95); } }
+
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif; }
@@ -37,6 +45,9 @@ html {
   .header__right {
     display: flex;
     justify-content: center; }
+  .header__image {
+    transform: scale(1);
+    animation: pulse 2s infinite; }
 
 .s-features__features {
   text-align: center;
@@ -87,40 +98,81 @@ html {
     font-size: 1.5rem; }
 
 .s-pricing {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .s-pricing__card {
     margin: 4rem 0;
     box-shadow: 9px 14px 14px -1px rgba(0, 0, 0, 0.13); }
 
-.card__heading {
+.s-download {
+  background-color: #329bfa;
+  color: #fff;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  font-size: 1.5rem;
-  margin-bottom: 2rem; }
-  .card__heading--blue {
-    background-color: #e9f4fe; }
-  .card__heading--orange {
-    background-color: #fef4f0; }
-  .card__heading--green {
-    background-color: #e8fbf1; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .s-download__apps {
+    display: flex; }
+  .s-download__app {
+    margin: 0 0.3rem; }
 
-.card__price--blue {
-  color: #329bfa; }
-
-.card__price--orange {
-  color: #fcad5c; }
-
-.card__price--green {
-  color: #36ef8c; }
-
-.card__item {
-  padding: 1.5rem;
-  font-weight: 300;
-  font-size: 1.5rem; }
-
-.card__btn {
-  margin: 2.5rem 0; }
+.footer {
+  background-color: #2c2c2c;
+  color: #fff; }
+  .footer__footer {
+    padding: 3rem 2rem; }
+  .footer__social-media {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start; }
+  .footer__social-link {
+    padding: 1rem; }
+  .footer__social-bg {
+    background-color: #565656;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer__social-bg:not(:first-child) {
+      margin-left: 1rem; }
+  .footer__icon {
+    color: #c7c7c7;
+    font-size: 2.5rem; }
+    .footer__icon:hover {
+      color: #fff; }
+  .footer__heading {
+    font-size: 2.5rem; }
+  .footer__list {
+    padding: 1rem 0; }
+  .footer__item {
+    padding: 0.5rem 0; }
+    .footer__item:last-child {
+      margin-bottom: 2rem; }
+  .footer__link, .footer__link:link, .footer__link:visited {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    text-decoration: none; }
+  .footer__link:hover {
+    opacity: 1; }
+  .footer__copyright {
+    background-color: #000;
+    text-align: center;
+    opacity: 0.6;
+    padding: 2rem 3rem; }
+  .footer__author, .footer__author:link, .footer__author:visited {
+    color: #329bfa;
+    font-weight: 700;
+    text-decoration: none; }
+  .footer__author:hover {
+    text-decoration: underline; }
 
 .btn, .btn:link, .btn:visited {
   width: 150px;
@@ -165,3 +217,31 @@ html {
   font-size: 1.5rem;
   font-weight: 300;
   margin: 2rem 0; }
+
+.card {
+  width: 300px;
+  max-width: 400px; }
+  .card__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem; }
+    .card__heading--blue {
+      background-color: #e9f4fe; }
+    .card__heading--orange {
+      background-color: #fef4f0; }
+    .card__heading--green {
+      background-color: #e8fbf1; }
+  .card__price--blue {
+    color: #329bfa; }
+  .card__price--orange {
+    color: #fcad5c; }
+  .card__price--green {
+    color: #36ef8c; }
+  .card__item {
+    padding: 1.5rem;
+    font-weight: 300;
+    font-size: 1.5rem; }
+  .card__btn {
+    margin: 2.5rem 0; }

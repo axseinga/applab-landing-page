@@ -69,3 +69,52 @@
   font-weight: 300;
   margin: 2rem 0;
 }
+
+.card {
+  width: 300px;
+  max-width: 400px;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+    &--blue {
+      background-color: $color-card-1;
+    }
+
+    &--orange {
+      background-color: $color-card-2;
+    }
+
+    &--green {
+      background-color: $color-card-3;
+    }
+  }
+
+  &__price {
+    &--blue {
+      color: $color-primary;
+    }
+
+    &--orange {
+      color: $gradient-2-fallback;
+    }
+
+    &--green {
+      color: $gradient-3-fallback;
+    }
+  }
+
+  &__item {
+    padding: 1.5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    margin: 2.5rem 0;
+  }
+}

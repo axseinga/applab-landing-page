@@ -52,6 +52,11 @@
     display: flex;
     justify-content: center;
   }
+
+  &__image {
+    transform: scale(1);
+    animation: pulse 2s infinite;
+  }
 }
 
 .s-features {
@@ -151,6 +156,10 @@
 
 .s-pricing {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__card {
     margin: 4rem 0;
@@ -158,49 +167,122 @@
   }
 }
 
-.card {
-  &__heading {
-    display: flex;
-    justify-content: space-between;
+.s-download {
+  background-color: $color-primary;
+  color: $color-white;
+  text-align: center;
 
-    padding: 2rem;
-    font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__apps {
+    display: flex;
+  }
+
+  &__app {
+    margin: 0 0.3rem;
+  }
+}
+
+.footer {
+  background-color: $color-secondary;
+  color: $color-white;
+
+  &__footer {
+    padding: 3rem 2rem;
+  }
+
+  &__social-media {
+    padding: 2rem 0;
     margin-bottom: 2rem;
 
-    &--blue {
-      background-color: $color-card-1;
-    }
+    display: flex;
+    justify-content: flex-start;
+  }
 
-    &--orange {
-      background-color: $color-card-2;
-    }
+  &__social-link {
+    padding: 1rem;
+  }
 
-    &--green {
-      background-color: $color-card-3;
+  &__social-bg {
+    background-color: $color-dark-grey;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
     }
   }
 
-  &__price {
-    &--blue {
-      color: $color-primary;
-    }
+  &__icon {
+    color: $color-social-media;
+    font-size: 2.5rem;
 
-    &--orange {
-      color: $gradient-2-fallback;
+    &:hover {
+      color: $color-white;
     }
+  }
 
-    &--green {
-      color: $gradient-3-fallback;
-    }
+  &__list-wrapper {
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+  }
+
+  &__list {
+    padding: 1rem 0;
   }
 
   &__item {
-    padding: 1.5rem;
-    font-weight: 300;
-    font-size: 1.5rem;
+    padding: 0.5rem 0;
+
+    &:last-child {
+      margin-bottom: 2rem;
+    }
   }
 
-  &__btn {
-    margin: 2.5rem 0;
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: $color-white;
+      opacity: 0.6;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__copyright {
+    background-color: $color-black;
+    text-align: center;
+    opacity: 0.6;
+
+    padding: 2rem 3rem;
+  }
+
+  &__author {
+    &,
+    &:link,
+    &:visited {
+      color: $color-primary;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

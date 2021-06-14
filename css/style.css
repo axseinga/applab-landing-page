@@ -86,17 +86,53 @@ html {
     text-transform: uppercase;
     font-size: 1.5rem; }
 
+.s-pricing {
+  text-align: center; }
+  .s-pricing__card {
+    margin: 4rem 0;
+    box-shadow: 9px 14px 14px -1px rgba(0, 0, 0, 0.13); }
+
+.card__heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+  .card__heading--blue {
+    background-color: #e9f4fe; }
+  .card__heading--orange {
+    background-color: #fef4f0; }
+  .card__heading--green {
+    background-color: #e8fbf1; }
+
+.card__price--blue {
+  color: #329bfa; }
+
+.card__price--orange {
+  color: #fcad5c; }
+
+.card__price--green {
+  color: #36ef8c; }
+
+.card__item {
+  padding: 1.5rem;
+  font-weight: 300;
+  font-size: 1.5rem; }
+
+.card__btn {
+  margin: 2.5rem 0; }
+
 .btn, .btn:link, .btn:visited {
   width: 150px;
   height: 40px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1rem;
   background-color: transparent;
-  color: #fff;
   border-radius: 3px;
   transition: all 150ms ease-in-out; }
 
 .btn--cta, .btn--cta:link, .btn--cta:visited {
+  color: #fff;
   border: 1px solid #36ebed;
   box-shadow: 0 0 40px 40px #36ebed inset, 0 0 0 0 #36ebed; }
 
@@ -104,11 +140,20 @@ html {
   box-shadow: 0 0 10px 0 #36ebed inset, 0 0 10px 4px #36ebed; }
 
 .btn--download, .btn--download:link, .btn--download:visited {
+  color: #fff;
   border: 1px solid #329bfa;
   box-shadow: 0 0 40px 40px #329bfa inset, 0 0 0 0 #329bfa; }
 
 .btn--download:hover {
   color: #329bfa;
+  box-shadow: 0 0 10px 0 #329bfa inset, 0 0 10px 4px #329bfa; }
+
+.btn--get-now, .btn--get-now:link, .btn--get-now:visited {
+  color: #329bfa;
+  border: 1px solid #329bfa;
+  box-shadow: 0 0 40px 40px #fff inset, 0 0 0 0 #329bfa; }
+
+.btn--get-now:hover {
   box-shadow: 0 0 10px 0 #329bfa inset, 0 0 10px 4px #329bfa; }
 
 .heading-2 {

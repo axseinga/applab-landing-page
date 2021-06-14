@@ -16,20 +16,34 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (min-width: 37.5rem) {
+    .nav {
+      height: 80px;
+      padding: 1rem 4rem; } }
   .nav__logo {
     align-self: flex-start; }
+    @media only screen and (min-width: 37.5rem) {
+      .nav__logo {
+        align-self: center; } }
   .nav__hamburger {
     font-size: 2.5rem;
     color: #fff; }
 
 .section {
   padding: 3rem; }
+  @media only screen and (min-width: 56.25rem) {
+    .section {
+      padding: 8rem; } }
 
 .header {
   background-image: url(../images/banner/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+  @media only screen and (min-width: 56.25rem) {
+    .header {
+      display: flex;
+      align-items: center; } }
   .header__left {
     color: #fff;
     text-align: left;
@@ -38,8 +52,14 @@ html {
     font-size: 2.5rem;
     font-weight: 300;
     padding: 2rem 0; }
+    @media only screen and (min-width: 37.5rem) {
+      .header__heading {
+        font-size: 3.2rem; } }
   .header__desc {
     font-size: 1.1rem; }
+    @media only screen and (min-width: 37.5rem) {
+      .header__desc {
+        font-size: 1.7rem; } }
   .header__cta {
     margin: 3rem 0; }
   .header__right {
@@ -55,6 +75,24 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (min-width: 37.5rem) {
+    .s-features__features {
+      padding: 0 15rem; } }
+
+@media only screen and (min-width: 56.25rem) {
+  .s-features__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0; } }
+
+@media only screen and (min-width: 56.25rem) {
+  .s-features__feature {
+    width: 200px;
+    margin: 2rem 3rem; } }
+
+.s-features__download {
+  display: flex;
+  flex-direction: column; }
 
 .features__img {
   padding: 2rem;
@@ -76,12 +114,28 @@ html {
   padding: 0 6rem;
   line-height: 3rem;
   font-weight: 300; }
+  @media only screen and (min-width: 37.5rem) {
+    .features__desc {
+      padding: 0; } }
 
-.download__btn {
-  margin: 2rem 0; }
-
-.download__img {
-  margin: 2rem 0; }
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 56.25rem) {
+    .download {
+      flex-direction: row; } }
+  @media only screen and (min-width: 56.25rem) {
+    .download__left {
+      max-width: 50%; } }
+  @media only screen and (min-width: 56.25rem) {
+    .download__right {
+      width: 50%; } }
+  .download__btn {
+    margin: 2rem 0; }
+  .download__img {
+    margin: 2rem 0; }
 
 .s-reviews {
   background-image: linear-gradient(90deg, rgba(50, 155, 250, 0.9) 35%, rgba(50, 155, 250, 0.9) 100%), url(../images/banner/testmonial.png);
@@ -91,11 +145,17 @@ html {
   text-align: center;
   color: #fff;
   padding: 5rem; }
+  .s-reviews__review {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .s-reviews__stars {
-    color: #f4cf67; }
+    color: #f4cf67;
+    font-size: 1.5rem; }
   .s-reviews__author {
     text-transform: uppercase;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin-left: 0.5rem; }
 
 .s-pricing {
   text-align: center;
@@ -103,9 +163,23 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (min-width: 56.25rem) {
+    .s-pricing__card-wrapper {
+      display: flex;
+      flex-direction: row; } }
   .s-pricing__card {
     margin: 4rem 0;
-    box-shadow: 9px 14px 14px -1px rgba(0, 0, 0, 0.13); }
+    box-shadow: 9px 14px 14px -1px rgba(0, 0, 0, 0.13);
+    z-index: 99; }
+    @media only screen and (min-width: 56.25rem) {
+      .s-pricing__card {
+        margin: 4rem 1.5rem; } }
+    @media only screen and (min-width: 56.25rem) {
+      .s-pricing__card:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        z-index: 9;
+        transition: 1s; } }
 
 .s-download {
   background-color: #329bfa;
@@ -115,6 +189,9 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (min-width: 56.25rem) {
+    .s-download {
+      text-align: left; } }
   .s-download__apps {
     display: flex; }
   .s-download__app {
@@ -147,6 +224,11 @@ html {
     font-size: 2.5rem; }
     .footer__icon:hover {
       color: #fff; }
+  .footer__links-wrapper {
+    display: grid; }
+    @media only screen and (min-width: 37.5rem) {
+      .footer__links-wrapper {
+        grid-template-columns: repeat(3, 1fr); } }
   .footer__heading {
     font-size: 2.5rem; }
   .footer__list {
@@ -167,6 +249,9 @@ html {
     text-align: center;
     opacity: 0.6;
     padding: 2rem 3rem; }
+    @media only screen and (min-width: 56.25rem) {
+      .footer__copyright {
+        font-size: 1.2rem; } }
   .footer__author, .footer__author:link, .footer__author:visited {
     color: #329bfa;
     font-weight: 700;
@@ -191,6 +276,12 @@ html {
 .btn--cta:hover {
   box-shadow: 0 0 10px 0 #36ebed inset, 0 0 10px 4px #36ebed; }
 
+@media only screen and (min-width: 56.25rem) {
+  .btn--cta {
+    width: 200px;
+    height: 50px;
+    font-size: 1.8rem; } }
+
 .btn--download, .btn--download:link, .btn--download:visited {
   color: #fff;
   border: 1px solid #329bfa;
@@ -199,6 +290,12 @@ html {
 .btn--download:hover {
   color: #329bfa;
   box-shadow: 0 0 10px 0 #329bfa inset, 0 0 10px 4px #329bfa; }
+
+@media only screen and (min-width: 56.25rem) {
+  .btn--download {
+    width: 200px;
+    height: 50px;
+    font-size: 1.8rem; } }
 
 .btn--get-now, .btn--get-now:link, .btn--get-now:visited {
   color: #329bfa;
@@ -212,14 +309,25 @@ html {
   font-size: 2rem;
   font-weight: 300;
   margin: 2rem 0; }
+  @media only screen and (min-width: 37.5rem) {
+    .heading-2 {
+      font-size: 2.5rem; } }
+  @media only screen and (min-width: 56.25rem) {
+    .heading-2--big {
+      font-size: 4.5rem;
+      padding: 0 6rem; } }
 
 .paragraph {
   font-size: 1.5rem;
   font-weight: 300;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  opacity: 0.8; }
+  @media only screen and (min-width: 37.5rem) {
+    .paragraph {
+      font-size: 2rem; } }
 
 .card {
-  width: 300px;
+  width: 280px;
   max-width: 400px; }
   .card__heading {
     display: flex;

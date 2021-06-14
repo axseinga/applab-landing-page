@@ -47,40 +47,52 @@
         <h2 class="heading-2 s-features__heading">
           Save your time to using applab
         </h2>
-        <img
-          src="./images/icons/2.svg"
-          alt="Three dots inside circle"
-          class="features__img features__img--blue"
-        />
-        <p class="features__desc">Manage team in One Place</p>
-        <img
-          src="./images/icons/1.svg"
-          alt="Three dots inside circle"
-          class="features__img features__img--orange"
-        />
-        <p class="features__desc">All-powerfull Pointing has no control</p>
-        <img
-          src="./images/icons/3.svg"
-          alt="Three dots inside circle"
-          class="features__img features__img--green"
-        />
-        <p class="features__desc">Establish a solid online presence</p>
+        <div class="s-features__wrapper">
+          <div class="s-features__feature">
+            <img
+              src="./images/icons/2.svg"
+              alt="Three dots inside circle"
+              class="features__img features__img--blue"
+            />
+            <p class="features__desc">Manage team in One Place</p>
+          </div>
+          <div class="s-features__feature">
+            <img
+              src="./images/icons/1.svg"
+              alt="Three dots inside circle"
+              class="features__img features__img--orange"
+            />
+            <p class="features__desc">All-powerfull Pointing has no control</p>
+          </div>
+          <div class="s-features__feature">
+            <img
+              src="./images/icons/3.svg"
+              alt="Three dots inside circle"
+              class="features__img features__img--green"
+            />
+            <p class="features__desc">Establish a solid online presence</p>
+          </div>
+        </div>
       </article>
       <article class="s-features__download download">
-        <h2 class="heading-2 download__heading">
-          Features that give you real feel
-        </h2>
-        <p class="download__desc paragraph">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
-          delectus facere harum laboriosam incidunt nemo numquam maiores
-          reprehenderit consectetur quos?
-        </p>
-        <button class="btn btn--download download__btn">Download Now</button>
-        <img
-          src="./images/draw.png"
-          alt="Image of downloading app on mobile"
-          class="download__img"
-        />
+        <div class="download__left">
+          <h2 class="heading-2 download__heading">
+            Features that give you real feel
+          </h2>
+          <p class="download__desc paragraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Architecto, delectus facere harum laboriosam incidunt nemo numquam
+            maiores reprehenderit consectetur quos?
+          </p>
+          <button class="btn btn--download download__btn">Download Now</button>
+        </div>
+        <div class="download__right">
+          <img
+            src="./images/draw.png"
+            alt="Image of downloading app on mobile"
+            class="download__img"
+          />
+        </div>
       </article>
     </section>
     <section class="section s-reviews">
@@ -109,51 +121,53 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolorum
         eius quos tempore.
       </p>
-      <article class="s-pricing__card card">
-        <h3 class="card__heading card__heading--blue">
-          <span class="card__heading--normal">Basic</span
-          ><span class="card__price--blue">$06</span>
-        </h3>
-        <ul class="card__list">
-          <li class="card__item">One User</li>
-          <li class="card__item">1000 ui elements</li>
-          <li class="card__item">Webmail Support</li>
-          <li class="card__item">100GB Cloud Storage</li>
-        </ul>
-        <button class="btn btn--get-now card__btn">Get Now</button>
-      </article>
+      <div class="s-pricing__card-wrapper">
+        <article class="s-pricing__card card">
+          <h3 class="card__heading card__heading--blue">
+            <span class="card__heading--normal">Basic</span
+            ><span class="card__price--blue">$06</span>
+          </h3>
+          <ul class="card__list">
+            <li class="card__item">One User</li>
+            <li class="card__item">1000 ui elements</li>
+            <li class="card__item">Webmail Support</li>
+            <li class="card__item">100GB Cloud Storage</li>
+          </ul>
+          <button class="btn btn--get-now card__btn">Get Now</button>
+        </article>
 
-      <article class="s-pricing__card card">
-        <h3 class="card__heading card__heading--orange">
-          <span class="card__heading--normal">Team</span
-          ><span class="card__price--orange">$06</span>
-        </h3>
-        <ul class="card__list">
-          <li class="card__item">One User</li>
-          <li class="card__item">1000 ui elements</li>
-          <li class="card__item">Webmail Support</li>
-          <li class="card__item">100GB Cloud Storage</li>
-          <li class="card__item">Unlimited Users Limit</li>
-        </ul>
-        <button class="btn btn--get-now card__btn">Get Now</button>
-      </article>
+        <article class="s-pricing__card card">
+          <h3 class="card__heading card__heading--orange">
+            <span class="card__heading--normal">Team</span
+            ><span class="card__price--orange">$06</span>
+          </h3>
+          <ul class="card__list">
+            <li class="card__item">One User</li>
+            <li class="card__item">1000 ui elements</li>
+            <li class="card__item">Webmail Support</li>
+            <li class="card__item">100GB Cloud Storage</li>
+            <li class="card__item">Unlimited Users Limit</li>
+          </ul>
+          <button class="btn btn--get-now card__btn">Get Now</button>
+        </article>
 
-      <article class="s-pricing__card card">
-        <h3 class="card__heading card__heading--green">
-          <span class="card__heading--normal">Business</span
-          ><span class="card__price--green">$06</span>
-        </h3>
-        <ul class="card__list">
-          <li class="card__item">One User</li>
-          <li class="card__item">1000 ui elements</li>
-          <li class="card__item">Webmail Support</li>
-          <li class="card__item">100GB Cloud Storage</li>
-        </ul>
-        <button class="btn btn--get-now card__btn">Get Now</button>
-      </article>
+        <article class="s-pricing__card card">
+          <h3 class="card__heading card__heading--green">
+            <span class="card__heading--normal">Business</span
+            ><span class="card__price--green">$06</span>
+          </h3>
+          <ul class="card__list">
+            <li class="card__item">One User</li>
+            <li class="card__item">1000 ui elements</li>
+            <li class="card__item">Webmail Support</li>
+            <li class="card__item">100GB Cloud Storage</li>
+          </ul>
+          <button class="btn btn--get-now card__btn">Get Now</button>
+        </article>
+      </div>
     </section>
     <section class="section s-download">
-      <h2 class="heading-2 s-download__heading">
+      <h2 class="heading-2 heading-2--big s-download__heading">
         Get start from now and increase productivity
       </h2>
       <div class="s-download__apps">
@@ -194,52 +208,54 @@
             ></a>
           </div>
         </div>
-        <div class="footer__list-wrapper">
-          <h3 class="footer__heading">Services</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Team management</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Collaboration</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Todo</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Events</a>
-            </li>
-          </ul>
-        </div>
+        <div class="footer__links-wrapper">
+          <div class="footer__list-wrapper">
+            <h3 class="footer__heading">Services</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Team management</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Collaboration</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Todo</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Events</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="footer__list-wrapper">
-          <h3 class="footer__heading">Useful Links</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Pricing</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Features</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Blog</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Contact</a>
-            </li>
-          </ul>
-        </div>
+          <div class="footer__list-wrapper">
+            <h3 class="footer__heading">Useful Links</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="footer__list-wrapper">
-          <h3 class="footer__heading">Downloads</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Download from Apple Store</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Download from Play Store</a>
-            </li>
-          </ul>
+          <div class="footer__list-wrapper">
+            <h3 class="footer__heading">Downloads</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Download from Apple Store</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Download from Play Store</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer__copyright">

@@ -7,8 +7,17 @@
   justify-content: space-between;
   align-items: center;
 
+  @media only screen and (min-width: $bp-mobile) {
+    height: 80px;
+    padding: 1rem 4rem;
+  }
+
   &__logo {
     align-self: flex-start;
+
+    @media only screen and (min-width: $bp-mobile) {
+      align-self: center;
+    }
   }
 
   &__hamburger {
@@ -19,6 +28,10 @@
 
 .section {
   padding: 3rem;
+
+  @media only screen and (min-width: $bp-tablet) {
+    padding: 8rem;
+  }
 }
 
 .header {
@@ -26,6 +39,11 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media only screen and (min-width: $bp-tablet) {
+    display: flex;
+    align-items: center;
+  }
 
   &__left {
     color: $color-white;
@@ -38,10 +56,18 @@
     font-weight: 300;
 
     padding: 2rem 0;
+
+    @media only screen and (min-width: $bp-mobile) {
+      font-size: 3.2rem;
+    }
   }
 
   &__desc {
     font-size: 1.1rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      font-size: 1.7rem;
+    }
   }
 
   &__cta {
@@ -67,9 +93,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (min-width: $bp-mobile) {
+      padding: 0 15rem;
+    }
+  }
+
+  &__wrapper {
+    @media only screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: row;
+      margin: 3rem 0;
+    }
+  }
+
+  &__feature {
+    @media only screen and (min-width: $bp-tablet) {
+      width: 200px;
+      margin: 2rem 3rem;
+    }
   }
 
   &__download {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -103,14 +150,33 @@
     padding: 0 6rem;
     line-height: 3rem;
     font-weight: 300;
+
+    @media only screen and (min-width: $bp-mobile) {
+      padding: 0;
+    }
   }
 }
 
 .download {
-  &__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: $bp-tablet) {
+    flex-direction: row;
   }
 
-  &__desc {
+  &__left {
+    @media only screen and (min-width: $bp-tablet) {
+      max-width: 50%;
+    }
+  }
+
+  &__right {
+    @media only screen and (min-width: $bp-tablet) {
+      width: 50%;
+    }
   }
 
   &__btn {
@@ -135,22 +201,22 @@
   text-align: center;
   color: $color-white;
   padding: 5rem;
-  &__heading {
-  }
-
-  &__desc {
-  }
 
   &__review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__stars {
     color: $color-star;
+    font-size: 1.5rem;
   }
 
   &__author {
     text-transform: uppercase;
     font-size: 1.5rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -161,9 +227,30 @@
   justify-content: center;
   align-items: center;
 
+  &__card-wrapper {
+    @media only screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
   &__card {
     margin: 4rem 0;
     box-shadow: 9px 14px 14px -1px rgba(0, 0, 0, 0.13);
+    z-index: 99;
+
+    @media only screen and (min-width: $bp-tablet) {
+      margin: 4rem 1.5rem;
+    }
+
+    &:hover {
+      @media only screen and (min-width: $bp-tablet) {
+        transform: scale(1.1);
+        opacity: 1;
+        z-index: 9;
+        transition: 1s;
+      }
+    }
   }
 }
 
@@ -176,6 +263,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (min-width: $bp-tablet) {
+    text-align: left;
+  }
 
   &__apps {
     display: flex;
@@ -230,7 +321,12 @@
     }
   }
 
-  &__list-wrapper {
+  &__links-wrapper {
+    display: grid;
+
+    @media only screen and (min-width: $bp-mobile) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__heading {
@@ -270,6 +366,10 @@
     opacity: 0.6;
 
     padding: 2rem 3rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+      font-size: 1.2rem;
+    }
   }
 
   &__author {

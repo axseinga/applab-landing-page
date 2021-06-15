@@ -43,11 +43,15 @@ html {
   @media only screen and (min-width: 56.25rem) {
     .header {
       display: flex;
-      align-items: center; } }
+      align-items: center;
+      justify-content: space-between; } }
   .header__left {
     color: #fff;
     text-align: left;
     margin: 2rem 0; }
+    @media only screen and (min-width: 75rem) {
+      .header__left {
+        margin: 1rem 6rem; } }
   .header__heading {
     font-size: 2.5rem;
     font-weight: 300;
@@ -55,11 +59,17 @@ html {
     @media only screen and (min-width: 37.5rem) {
       .header__heading {
         font-size: 3.2rem; } }
+    @media only screen and (min-width: 75rem) {
+      .header__heading {
+        font-size: 4rem; } }
   .header__desc {
     font-size: 1.1rem; }
     @media only screen and (min-width: 37.5rem) {
       .header__desc {
         font-size: 1.7rem; } }
+    @media only screen and (min-width: 75rem) {
+      .header__desc {
+        font-size: 2rem; } }
   .header__cta {
     margin: 3rem 0; }
   .header__right {
@@ -68,6 +78,10 @@ html {
   .header__image {
     transform: scale(1);
     animation: pulse 2s infinite; }
+
+@media only screen and (min-width: 75rem) {
+  .s-features {
+    padding: 12rem 8rem; } }
 
 .s-features__features {
   text-align: center;
@@ -78,12 +92,21 @@ html {
   @media only screen and (min-width: 37.5rem) {
     .s-features__features {
       padding: 0 15rem; } }
+  @media only screen and (min-width: 75rem) {
+    .s-features__features {
+      padding: 0; } }
 
 @media only screen and (min-width: 56.25rem) {
   .s-features__wrapper {
     display: flex;
     flex-direction: row;
     margin: 3rem 0; } }
+
+@media only screen and (min-width: 75rem) {
+  .s-features__wrapper {
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 6rem 0; } }
 
 @media only screen and (min-width: 56.25rem) {
   .s-features__feature {
@@ -144,7 +167,14 @@ html {
   background-position: center;
   text-align: center;
   color: #fff;
-  padding: 5rem; }
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 75rem) {
+    .s-reviews {
+      height: 50vh; } }
   .s-reviews__review {
     display: flex;
     justify-content: center;
@@ -174,6 +204,9 @@ html {
     @media only screen and (min-width: 56.25rem) {
       .s-pricing__card {
         margin: 4rem 1.5rem; } }
+    @media only screen and (min-width: 75rem) {
+      .s-pricing__card {
+        margin: 6rem 4rem; } }
     @media only screen and (min-width: 56.25rem) {
       .s-pricing__card:hover {
         transform: scale(1.1);
@@ -192,8 +225,13 @@ html {
   @media only screen and (min-width: 56.25rem) {
     .s-download {
       text-align: left; } }
+  @media only screen and (min-width: 75rem) {
+    .s-download {
+      flex-direction: row;
+      justify-content: space-between; } }
   .s-download__apps {
-    display: flex; }
+    display: flex;
+    width: 50%; }
   .s-download__app {
     margin: 0 0.3rem; }
 
@@ -202,6 +240,12 @@ html {
   color: #fff; }
   .footer__footer {
     padding: 3rem 2rem; }
+    @media only screen and (min-width: 75rem) {
+      .footer__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; } }
   .footer__social-media {
     padding: 2rem 0;
     margin-bottom: 2rem;
@@ -224,11 +268,19 @@ html {
     font-size: 2.5rem; }
     .footer__icon:hover {
       color: #fff; }
-  .footer__links-wrapper {
-    display: grid; }
-    @media only screen and (min-width: 37.5rem) {
-      .footer__links-wrapper {
-        grid-template-columns: repeat(3, 1fr); } }
+  @media only screen and (min-width: 37.5rem) {
+    .footer__logo-wrapper {
+      margin: 0 4rem; } }
+  @media only screen and (min-width: 75rem) {
+    .footer__logo-wrapper {
+      width: 40%; } }
+  @media only screen and (min-width: 37.5rem) {
+    .footer__list-wrapper {
+      display: flex;
+      justify-content: space-evenly; } }
+  @media only screen and (min-width: 75rem) {
+    .footer__list-wrapper {
+      width: 60%; } }
   .footer__heading {
     font-size: 2.5rem; }
   .footer__list {
@@ -252,6 +304,9 @@ html {
     @media only screen and (min-width: 56.25rem) {
       .footer__copyright {
         font-size: 1.2rem; } }
+    @media only screen and (min-width: 75rem) {
+      .footer__copyright {
+        font-size: 1.5rem; } }
   .footer__author, .footer__author:link, .footer__author:visited {
     color: #329bfa;
     font-weight: 700;
@@ -312,6 +367,9 @@ html {
   @media only screen and (min-width: 37.5rem) {
     .heading-2 {
       font-size: 2.5rem; } }
+  @media only screen and (min-width: 75rem) {
+    .heading-2 {
+      font-size: 4rem; } }
   @media only screen and (min-width: 56.25rem) {
     .heading-2--big {
       font-size: 4.5rem;
@@ -329,6 +387,11 @@ html {
 .card {
   width: 280px;
   max-width: 400px; }
+  @media only screen and (min-width: 75rem) {
+    .card {
+      width: 320px;
+      display: flex;
+      flex-direction: column; } }
   .card__heading {
     display: flex;
     justify-content: space-between;
@@ -352,4 +415,6 @@ html {
     font-weight: 300;
     font-size: 1.5rem; }
   .card__btn {
-    margin: 2.5rem 0; }
+    margin: 2.5rem 0;
+    align-self: center;
+    justify-self: flex-end; }

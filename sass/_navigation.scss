@@ -84,7 +84,7 @@
     width: 120px;
 
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 20px;
 
     display: none;
@@ -108,8 +108,16 @@
       transition: 1s;
     }
   }
+
+  &__input {
+    display: none;
+  }
 }
 
-.nav__item:hover .nav__dropdown {
+.nav__input:checked + .nav__dropdown {
   display: block;
 }
+
+/*.nav__item:hover .nav__dropdown {
+  display: block;
+}*/

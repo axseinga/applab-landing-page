@@ -67,7 +67,7 @@ html {
     padding: 1rem 2rem;
     width: 120px;
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 20px;
     display: none; }
   .nav__dropdown-item {
@@ -79,10 +79,15 @@ html {
   .nav__dropdown-link:hover {
     color: #36ebed;
     transition: 1s; }
+  .nav__input {
+    display: none; }
 
-.nav__item:hover .nav__dropdown {
+.nav__input:checked + .nav__dropdown {
   display: block; }
 
+/*.nav__item:hover .nav__dropdown {
+  display: block;
+}*/
 .section {
   padding: 3rem; }
   @media only screen and (min-width: 56.25rem) {

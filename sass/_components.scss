@@ -14,6 +14,21 @@
     transition: all 150ms ease-in-out;
   }
 
+  &--nav {
+    &,
+    &:link,
+    &:visited {
+      width: 100px;
+      color: $color-white;
+      border: 1px solid $color-btn-nav;
+      box-shadow: 0 0 40px 40px $color-btn-nav inset, 0 0 0 0 $color-btn-nav;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px 0 $color-btn-nav inset, 0 0 10px 4px $color-btn-nav;
+    }
+  }
+
   &--cta {
     &,
     &:link,

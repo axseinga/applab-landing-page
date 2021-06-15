@@ -19,7 +19,11 @@ html {
   @media only screen and (min-width: 37.5rem) {
     .nav {
       height: 80px;
-      padding: 1rem 4rem; } }
+      padding: 1rem 7rem; } }
+  @media only screen and (min-width: 75rem) {
+    .nav {
+      background-color: transparent;
+      padding: 1.5rem 7rem; } }
   .nav__logo {
     align-self: flex-start; }
     @media only screen and (min-width: 37.5rem) {
@@ -28,6 +32,33 @@ html {
   .nav__hamburger {
     font-size: 2.5rem;
     color: #fff; }
+    @media only screen and (min-width: 75rem) {
+      .nav__hamburger {
+        display: none; } }
+  .nav__items {
+    display: flex;
+    justify-content: space-around;
+    width: 40%; }
+    @media only screen and (max-width: 75rem) {
+      .nav__items {
+        display: none; } }
+  .nav__link, .nav__link:link, .nav__link:visited {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff; }
+  .nav__link:hover {
+    color: #36ebed;
+    transition: 1s; }
+  .nav__arrow-down {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 0.5rem; }
+  @media only screen and (max-width: 75rem) {
+    .nav__btn {
+      display: none; } }
 
 .section {
   padding: 3rem; }
@@ -40,11 +71,13 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-  @media only screen and (min-width: 56.25rem) {
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; } }
+  .header__header {
+    padding: 3rem; }
+    @media only screen and (min-width: 56.25rem) {
+      .header__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; } }
   .header__left {
     color: #fff;
     text-align: left;
@@ -322,6 +355,15 @@ html {
   background-color: transparent;
   border-radius: 3px;
   transition: all 150ms ease-in-out; }
+
+.btn--nav, .btn--nav:link, .btn--nav:visited {
+  width: 100px;
+  color: #fff;
+  border: 1px solid #42b3fa;
+  box-shadow: 0 0 40px 40px #42b3fa inset, 0 0 0 0 #42b3fa; }
+
+.btn--nav:hover {
+  box-shadow: 0 0 10px 0 #42b3fa inset, 0 0 10px 4px #42b3fa; }
 
 .btn--cta, .btn--cta:link, .btn--cta:visited {
   color: #fff;

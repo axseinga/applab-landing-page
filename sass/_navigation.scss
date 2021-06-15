@@ -14,7 +14,7 @@
 
   @media only screen and (min-width: $bp-desktop) {
     background-color: transparent;
-    padding: 1.5rem 7rem;
+    padding: 2rem 7rem;
   }
 
   &__logo {
@@ -28,9 +28,20 @@
   &__hamburger {
     font-size: 2.5rem;
     color: $color-white;
+    justify-self: flex-end;
 
     @media only screen and (min-width: $bp-desktop) {
       display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    @media only screen and (min-width: $bp-desktop) {
+      width: 90%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
   }
 
@@ -45,6 +56,7 @@
 
   &__item {
     position: relative;
+    margin: 0 0.2rem;
   }
 
   &__link {
@@ -72,6 +84,7 @@
   }
 
   &__btn {
+    margin-left: 25rem;
     @media only screen and (max-width: $bp-desktop) {
       display: none;
     }
@@ -118,6 +131,6 @@
   display: block;
 }
 
-/*.nav__item:hover .nav__dropdown {
+/*.nav__ham-input:checked .nav__menu {
   display: block;
 }*/

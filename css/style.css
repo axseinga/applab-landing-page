@@ -23,7 +23,7 @@ html {
   @media only screen and (min-width: 75rem) {
     .nav {
       background-color: transparent;
-      padding: 1.5rem 7rem; } }
+      padding: 2rem 7rem; } }
   .nav__logo {
     align-self: flex-start; }
     @media only screen and (min-width: 37.5rem) {
@@ -31,10 +31,19 @@ html {
         align-self: center; } }
   .nav__hamburger {
     font-size: 2.5rem;
-    color: #fff; }
+    color: #fff;
+    justify-self: flex-end; }
     @media only screen and (min-width: 75rem) {
       .nav__hamburger {
         display: none; } }
+  .nav__menu {
+    display: none; }
+    @media only screen and (min-width: 75rem) {
+      .nav__menu {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; } }
   .nav__items {
     display: flex;
     justify-content: space-around;
@@ -43,7 +52,8 @@ html {
       .nav__items {
         display: none; } }
   .nav__item {
-    position: relative; }
+    position: relative;
+    margin: 0 0.2rem; }
   .nav__link, .nav__link:link, .nav__link:visited {
     text-decoration: none;
     font-size: 1.5rem;
@@ -58,9 +68,11 @@ html {
     padding: 3px;
     transform: rotate(45deg);
     margin-left: 0.5rem; }
-  @media only screen and (max-width: 75rem) {
-    .nav__btn {
-      display: none; } }
+  .nav__btn {
+    margin-left: 25rem; }
+    @media only screen and (max-width: 75rem) {
+      .nav__btn {
+        display: none; } }
   .nav__dropdown {
     background-color: #fff;
     border-radius: 5px;
@@ -85,7 +97,7 @@ html {
 .nav__input:checked + .nav__dropdown {
   display: block; }
 
-/*.nav__item:hover .nav__dropdown {
+/*.nav__ham-input:checked .nav__menu {
   display: block;
 }*/
 .section {

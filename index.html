@@ -24,50 +24,60 @@
     <header class="header" id="home">
       <nav class="nav">
         <img src="./images/logo.png" alt="Applab Logo" class="nav__logo" />
-        <span class="nav__hamburger"><i class="fas fa-bars"></i></span>
-
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#features" class="nav__link">Features</a>
-          </li>
-          <li class="nav__item">
-            <a href="#pricing" class="nav__link">Pricing</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Blog</a
-            ><label for="dp1"> <i class="nav__arrow-down"></i></label>
-            <input type="checkbox" id="dp1" class="nav__input" />
-            <ul class="nav__dropdown">
-              <li class="nav__dropdown-item">
-                <a href="" class="nav__dropdown-link">Blog 1</a>
-              </li>
-              <li class="nav__dropdown-item">
-                <a href="" class="nav__dropdown-link">Blog 2</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Pages</a
-            ><label for="dp2"> <i class="nav__arrow-down"></i></label>
-            <input type="checkbox" id="dp2" class="nav__input" />
-            <ul class="nav__dropdown">
-              <li class="nav__dropdown-item">
-                <a href="" class="nav__dropdown-link">Page 1</a>
-              </li>
-              <li class="nav__dropdown-item">
-                <a href="" class="nav__dropdown-link">Page 2</a>
-              </li>
-              <li class="nav__dropdown-item">
-                <a href="" class="nav__dropdown-link">Page 3</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-        <button class="btn btn--nav nav__btn">Download</button>
+        <div class="nav__menu">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a
+              ><label for="dp1"> <i class="nav__arrow-down"></i></label>
+              <input type="checkbox" id="dp1" class="nav__input" />
+              <ul class="nav__dropdown">
+                <li class="nav__dropdown-item">
+                  <a href="" class="nav__dropdown-link">Blog 1</a>
+                </li>
+                <li class="nav__dropdown-item">
+                  <a href="" class="nav__dropdown-link">Blog 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pages</a
+              ><label for="dp2"> <i class="nav__arrow-down"></i></label>
+              <input type="checkbox" id="dp2" class="nav__input" />
+              <ul class="nav__dropdown">
+                <li class="nav__dropdown-item">
+                  <a href="" class="nav__dropdown-link">Page 1</a>
+                </li>
+                <li class="nav__dropdown-item">
+                  <a href="" class="nav__dropdown-link">Page 2</a>
+                </li>
+                <li class="nav__dropdown-item">
+                  <a href="" class="nav__dropdown-link">Page 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn--nav nav__btn">Download</button>
+        </div>
+        <label for="hamburger-menu"
+          ><span class="nav__hamburger"><i class="fas fa-bars"></i></span
+        ></label>
+        <input
+          type="checkbox"
+          id="hamburger-menu"
+          class="nav__input nav__ham-input"
+        />
       </nav>
       <article class="header__header">
         <div class="header__left">

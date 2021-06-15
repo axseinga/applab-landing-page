@@ -44,6 +44,7 @@
   }
 
   &__item {
+    position: relative;
   }
 
   &__link {
@@ -75,4 +76,40 @@
       display: none;
     }
   }
+
+  &__dropdown {
+    background-color: $color-white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    width: 120px;
+
+    position: absolute;
+    top: 25px;
+    left: 20px;
+
+    display: none;
+  }
+
+  &__dropdown-item {
+    padding: 0.5rem;
+  }
+
+  &__dropdown-link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $color-primary;
+    }
+
+    &:hover {
+      color: $color-cta;
+      transition: 1s;
+    }
+  }
+}
+
+.nav__item:hover .nav__dropdown {
+  display: block;
 }

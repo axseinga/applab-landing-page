@@ -21,26 +21,51 @@
     <title>Applab - Promote Your App</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="nav">
         <img src="./images/logo.png" alt="Applab Logo" class="nav__logo" />
         <span class="nav__hamburger"><i class="fas fa-bars"></i></span>
 
         <ul class="nav__items">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#features" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#pricing" class="nav__link">Pricing</a>
+          </li>
           <li class="nav__item">
             <a href="#" class="nav__link"
               >Blog <i class="nav__arrow-down"></i
             ></a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item">
+                <a href="" class="nav__dropdown-link">Blog 1</a>
+              </li>
+              <li class="nav__dropdown-item">
+                <a href="" class="nav__dropdown-link">Blog 2</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link"
               >Pages <i class="nav__arrow-down"></i
             ></a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item">
+                <a href="" class="nav__dropdown-link">Page 1</a>
+              </li>
+              <li class="nav__dropdown-item">
+                <a href="" class="nav__dropdown-link">Page 2</a>
+              </li>
+              <li class="nav__dropdown-item">
+                <a href="" class="nav__dropdown-link">Page 3</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
         </ul>
         <button class="btn btn--nav nav__btn">Download</button>
       </nav>
@@ -61,7 +86,7 @@
         </div>
       </article>
     </header>
-    <section class="section s-features">
+    <section class="section s-features" id="features">
       <article class="s-features__features features">
         <h2 class="heading-2 s-features__heading">
           Save your time to using applab
@@ -134,7 +159,7 @@
         <span class="s-reviews__author">- Robert Smile</span>
       </p>
     </section>
-    <section class="section s-pricing">
+    <section class="section s-pricing" id="pricing">
       <h2 class="heading-2 s-pricing__heading">Unlock full Power</h2>
       <p class="paragraph s-pricing__desc">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolorum
@@ -204,7 +229,7 @@
         /></a>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer__footer">
         <div class="footer__logo-wrapper footer__logo-wrapper--main">
           <img src="./images/logo.png" alt="AppLab Logo" class="footer__logo" />

@@ -42,6 +42,8 @@ html {
     @media only screen and (max-width: 75rem) {
       .nav__items {
         display: none; } }
+  .nav__item {
+    position: relative; }
   .nav__link, .nav__link:link, .nav__link:visited {
     text-decoration: none;
     font-size: 1.5rem;
@@ -59,6 +61,27 @@ html {
   @media only screen and (max-width: 75rem) {
     .nav__btn {
       display: none; } }
+  .nav__dropdown {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    width: 120px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    display: none; }
+  .nav__dropdown-item {
+    padding: 0.5rem; }
+  .nav__dropdown-link, .nav__dropdown-link:link, .nav__dropdown-link:visited {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #329bfa; }
+  .nav__dropdown-link:hover {
+    color: #36ebed;
+    transition: 1s; }
+
+.nav__item:hover .nav__dropdown {
+  display: block; }
 
 .section {
   padding: 3rem; }

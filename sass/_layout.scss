@@ -21,7 +21,7 @@
     }
   }
 
-  &__left {
+  &__content {
     color: $color-white;
     text-align: left;
     margin: 2rem 0;
@@ -62,7 +62,7 @@
     margin: 3rem 0;
   }
 
-  &__right {
+  &__gallery {
     display: flex;
     justify-content: center;
   }
@@ -165,13 +165,13 @@
     flex-direction: row;
   }
 
-  &__left {
+  &__content {
     @media only screen and (min-width: $bp-tablet) {
       max-width: 50%;
     }
   }
 
-  &__right {
+  &__gallery {
     @media only screen and (min-width: $bp-tablet) {
       width: 50%;
     }

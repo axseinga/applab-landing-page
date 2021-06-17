@@ -7,6 +7,8 @@
   justify-content: space-between;
   align-items: center;
 
+  position: relative;
+
   @media only screen and (min-width: $bp-mobile) {
     height: 80px;
     padding: 1rem 7rem;
@@ -37,6 +39,7 @@
 
   &__menu {
     display: none;
+
     @media only screen and (min-width: $bp-desktop) {
       width: 90%;
       display: flex;
@@ -50,13 +53,20 @@
     justify-content: space-around;
     width: 40%;
     @media only screen and (max-width: $bp-desktop) {
-      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      padding: 3rem;
     }
   }
 
   &__item {
     position: relative;
     margin: 0 0.2rem;
+    @media only screen and (max-width: $bp-desktop) {
+      padding: 2rem;
+      font-size: 3rem;
+    }
   }
 
   &__link {
@@ -66,6 +76,11 @@
       text-decoration: none;
       font-size: 1.5rem;
       color: $color-white;
+
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
     }
 
     &:hover {
@@ -101,6 +116,14 @@
     left: 20px;
 
     display: none;
+
+    @media only screen and (max-width: $bp-desktop) {
+      position: static;
+      background-color: transparent;
+      padding: 2rem 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__dropdown-item {
@@ -114,11 +137,18 @@
       text-decoration: none;
       font-size: 1.2rem;
       color: $color-primary;
+      transition: 1s;
+
+      @media only screen and (max-width: $bp-desktop) {
+        color: $color-white;
+        font-size: 2rem;
+        font-weight: 300;
+        opacity: 0.9;
+      }
     }
 
     &:hover {
       color: $color-cta;
-      transition: 1s;
     }
   }
 
@@ -131,6 +161,15 @@
   display: block;
 }
 
-/*.nav__ham-input:checked .nav__menu {
+.nav__ham-input:checked + .nav__menu {
   display: block;
-}*/
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background-color: $color-secondary;
+  width: 80%;
+  height: min-content;
+  border-radius: 8px;
+}

@@ -15,7 +15,7 @@
 
 ## Overview
 
-### The challenge
+### The challengels
 
 Users should be able to:
 
@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](.assets/screenshot.png)
+![](./assets/screenshot.png)
 
 ### Links
 
-- Solution URL: [See my code]()
-- Live Site URL: [Check it out here]()
+- Solution URL: [See my code](https://github.com/axseinga/applab-landing-page)
+- Live Site URL: [Check it out here](https://axseinga-applab-landing-page.netlify.app/)
 
 ## My process
 
